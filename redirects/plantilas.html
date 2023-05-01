@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../redirects/css/style.css">
+    <title>Plantillas</title>
+    <style>
+.hidden{
+    overflow: hidden;
+}
+
+    /*Preloader*/
+    .preloader{
+        padding-top: 800px;
+        width: 100vw;
+        height: -100vw;
+        background-color: #030213;
+    }
+    
+    .fondo {
+        width: 100vw;
+        height: 91.5vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .common {
+        height: 5vw;
+        max-height: 100%;
+        overflow: auto;
+        width: 2vw;
+        margin: auto;
+        max-width: 100%;
+        position: absolute;
+        background-color: "";
+        border-radius: 0vw 10vw 0vw 10vw;
+        box-shadow: inset 0vw 0vw 0vw .1vw #06023a, 0vw 0vw 1.5vw 0vw #06023a;
+    }
+    
+    .one {
+        transform: rotate(45deg);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 7.5vw;
+    }
+    
+    .two {
+        transform: rotate(90deg);
+        left: 5.5vw;
+        right: 0;
+        top: 0;
+        bottom: 5.5vw;
+    }
+    
+    .three {
+        transform: rotate(135deg);
+        left: 7.5vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .four {
+        transform: rotate(180deg);
+        left: 5.5vw;
+        right: 0;
+        top: 5.5vw;
+        bottom: 0;
+    }
+    
+    .five {
+        transform: rotate(225deg);
+        left: 0;
+        right: 0;
+        top: 7.5vw;
+        bottom: 0;
+    }
+    
+    .six {
+        transform: rotate(270deg);
+        left: 0;
+        right: 5.5vw;
+        top: 5.5vw;
+        bottom: 0;
+    }
+    
+    .seven {
+        transform: rotate(315deg);
+        left: 0;
+        right: 7.5vw;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .eight {
+        transform: rotate(360deg);
+        left: 0;
+        right: 5.5vw;
+        top: 0;
+        bottom: 5.5vw;
+    }
+    
+    .bar {
+        width: 12vw;
+        height: .25vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 16vw;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        background: #06023a;
+    }
+    
+    .progress {
+        width: 12vw;
+        height: .5vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        background: rgb(180, 3, 3);
+    }
+    
+    .one {
+        animation: one 1s ease infinite;
+        -moz-animation: one 1s ease infinite;
+        /* Firefox */
+        -webkit-animation: one 1s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: one 1s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes one {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .two {
+        animation: two 1s .125s ease infinite;
+        -moz-animation: two 1s .125s ease infinite;
+        /* Firefox */
+        -webkit-animation: two 1s .125s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: two 1s .125s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes two {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .three {
+        animation: three 1s .25s ease infinite;
+        -moz-animation: three 1s .25s ease infinite;
+        /* Firefox */
+        -webkit-animation: three 1s .25s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: three 1s .25s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes three {
+        0%,
+        100% {}
+        50% {
+        background: "";
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .four {
+        animation: four 1s .375s ease infinite;
+        -moz-animation: four 1s .375s ease infinite;
+        /* Firefox */
+        -webkit-animation: four 1s .375s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: four 1s .375s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes four {
+        0%,
+        100% {}
+        50% {
+        background: "";
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .five {
+        animation: five 1s .5s ease infinite;
+        -moz-animation: five 1s .5s ease infinite;
+        /* Firefox */
+        -webkit-animation: five 1s .5s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: five 1s .5s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes five {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .six {
+        animation: six 1s .625s ease infinite;
+        -moz-animation: six 1s .625s ease infinite;
+        /* Firefox */
+        -webkit-animation: six 1s .625s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: six 1s .625s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes six {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .seven {
+        animation: seven 1s .750s ease infinite;
+        -moz-animation: seven 1s .750s ease infinite;
+        /* Firefox */
+        -webkit-animation: seven 1s .750s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: seven 1s .750s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes seven {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .eight {
+        animation: eight 1s .875s ease infinite;
+        -moz-animation: eight 1s .875s ease infinite;
+        /* Firefox */
+        -webkit-animation: eight 1s .875s ease infinite;
+        /* Safari and Chrome */
+        -o-animation: eight 1s .875s ease infinite;
+        /* Opera */
+    }
+    
+    @keyframes eight {
+        0%,
+        100% {}
+        50% {
+        background:"" ;
+        box-shadow: inset 0vw 0vw 0vw .1vw rgb(180, 3, 3), 0vw 0vw 1.5vw 0vw rgb(180, 3, 3);
+        }
+    }
+    
+    .fondo {
+        animation: fondo 5s linear infinite;
+        -moz-animation: fondo 5s linear infinite;
+        /* Firefox */
+        -webkit-animation: fondo 5s linear infinite;
+        /* Safari and Chrome */
+        -o-animation: fondo 5s linear infinite;
+        /* Opera */
+    }
+    
+    @keyframes fondo {
+        from {
+        transform: rotate(0deg);
+        }
+        to {
+        transform: rotate(-360deg);
+        }
+    }
+    
+    .progress {
+        animation: progress 15s ease;
+        -moz-animation: progress 15s ease;
+        /* Firefox */
+        -webkit-animation: progress 15s ease;
+        /* Safari and Chrome */
+        -o-animation: progress 15s ease;
+        /* Opera */
+    }
+    
+    @keyframes progress {
+        0% {
+        left: -24vw;
+        }
+        10% {
+        left: -20vw;
+        }
+        30% {
+        left: -16vw;
+        }
+        50% {
+        left: -12vw;
+        }
+        65% {
+        left: -10vw;
+        }
+        80% {
+        left: -4vw;
+        }
+        100% {
+        left: 0;
+        }
+    }
+    
+    .fade-in {
+        animation: fade-in 2s ease;
+        -moz-animation: fade-in 2s ease;
+        /* Firefox */
+        -webkit-animation: fade-in 2s ease;
+        /* Safari and Chrome */
+        -o-animation: fade-in 2s ease;
+        /* Opera */
+    }
+    
+    @keyframes fade-in {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+    
+    .out {
+        animation: out 2s 15s ease;
+        -moz-animation: out 2s 15s ease;
+        /* Firefox */
+        -webkit-animation: out 2s 15s ease;
+        /* Safari and Chrome */
+        -o-animation: out 2s 15s ease;
+        /* Opera */
+    }
+    
+    @keyframes out {
+        from {
+        opacity: 1;
+        }
+        to {
+        opacity: 0;
+        }
+    }
+
+    </style>
+
+</head>
+<body class="hidden">
+        <!--Preloader-->
+        <section class="preloader" id="cargar">
+            <div class="out">
+                <div class="fade-in">
+                <div class="fondo">
+                    <div class="one common"></div>
+                    <div class="two common"></div>
+                    <div class="three common"></div>
+                    <div class="four common"></div>
+                    <div class="five common"></div>
+                    <div class="six common"></div>
+                    <div class="seven common"></div>
+                    <div class="eight common"></div>
+                </div>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!--Hero-->
+            <header class="hero">
+                <nav class="nav container">
+                    <div class="nav__logo">
+                        <a href="#" class="nav__title">ㅤ</a>
+                    </div>
+                    <div class="nav__logo">
+                        <a href="../index.html" class="nav__title">Programador Full-Stack</a>
+                    </div>
+                    <ul class="nav__link nav__link--menu">
+                        <li class="nav__items">
+                            <a href="../index.html" class="nav__links">Inicio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a id="btn-abrir-popup" class="nav__links">Contacato</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links"></a>
+                        </li>
+                        <img src="./images/close.svg" class="nav__close">
+                    </ul>
+                    <div class="nav__menu">
+                        <img src="./images/menu.svg" class="nav__img">
+                    </div>
+                </nav>
+                <section class="hero__container container">
+                    <h1 class="hero__title">Plantillas de algunas cosas</h1>
+                    <p class="hero__paragraph">Aqui encontraras plantillas de preloader, html, css, y javascript</p>
+                    <a href="#" class="cta">Come on</a>
+                </section>
+            </header>
+            <main>
+                <section class="container about">
+                    <h2 class="subtitle">¿ㅤㅤㅤㅤㅤㅤ?</h2>
+                    <p class="about__paragraph">!holaholaholaaholaholaholaohla¡</p>
+        
+                    <div class="about__main">
+                        <a href="" class="about__a">
+                        <article class="about__icons">
+                            <img src="../images/themejungle.jpg" class="about__icon">
+                            <h3 class="about__title">¿ㅤㅤㅤ?</h3>
+                            <p class="about__paragrah">!holaholaholaaholaholaholaohla¡</p>
+                        </article>
+                        </a>
+        
+                        <a href="" class="about__a">
+                        <article class="about__icons">
+                            <img src="../images/themejungle.jpg" class="about__icon">
+                            <h3 class="about__title">¿ㅤㅤㅤㅤㅤㅤ?</h3>
+                            <p class="about__paragrah">!holaholaholaaholaholaholaohla¡</p>
+                        </article>
+                        </a>
+        
+                        <a href="" class="about__a">
+                        <article class="about__icons">
+                            <img src="../images/themejungle.jpg" class="about__icon">
+                            <h3 class="about__title">¿ㅤㅤㅤㅤㅤㅤㅤㅤㅤ?</h3>
+                            <p class="about__paragrah">!holaholaholaaholaholaholaohla¡</p>
+                        </article>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <!--Scripts-->
+            <script src="../js/loader.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>
